@@ -40,8 +40,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnLogout.setOnClickListener {
-            Firebase.auth.signOut()
-            finish()
+            mGoogleSignInClient.signOut().addOnCompleteListener {
+                Firebase.auth.signOut()
+                finish()
+            }
         }
 
     }

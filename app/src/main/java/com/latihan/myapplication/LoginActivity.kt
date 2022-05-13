@@ -3,6 +3,7 @@ package com.latihan.myapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.view.ViewGroup
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -118,10 +119,12 @@ class LoginActivity : AppCompatActivity() {
 
     private fun firebaseAuthWithGoogle(idToken: String) {
         val credential = GoogleAuthProvider.getCredential(idToken, null)
+        progressBar(true)
         auth.signInWithCredential(credential)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    signIn()
+                    progressBar(false)
+                    reload()
                 } else {
                     Snackbar.make(
                         binding.root as ViewGroup,
@@ -133,9 +136,18 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun signIn() {
+        progressBar(true)
         val signInIntent = googleSignInClient.signInIntent
         startActivityForResult(signInIntent, 1001)
-        reload()
+        progressBar(false)
+    }
+
+    private fun progressBar(state: Boolean) {
+        if (state) {
+            binding.progressBar.visibility = View.VISIBLE
+        } else {
+            binding.progressBar.visibility = View.GONE
+        }
     }
 
 }
