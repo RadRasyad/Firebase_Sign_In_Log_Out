@@ -52,4 +52,6 @@ dependencies {
 
     //auth email&password provider
     implementation 'com.google.firebase:firebase-auth-ktx'
+    //gmail
+    implementation 'com.google.android.gms:play-services-auth:20.1.0'
 }

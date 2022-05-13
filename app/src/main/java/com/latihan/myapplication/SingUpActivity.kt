@@ -3,7 +3,6 @@ package com.latihan.myapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.ViewGroup
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
@@ -80,13 +79,10 @@ class SingUpActivity : AppCompatActivity() {
                         user.updateProfile(profileUpdates)
                             .addOnCompleteListener { task ->
                                 if (task.isSuccessful) {
-                                    Log.d("Sing Up", "User profile updated.")
                                 }
                             }
 
-                        // Sign in success, update UI with the signed-in user's information
-                        Log.d("Sing Up", "createUserWithEmail:success")
-                        finish()
+                        reload()
                         Snackbar.make(
                             binding.root as ViewGroup,
                             "Success",
@@ -95,8 +91,6 @@ class SingUpActivity : AppCompatActivity() {
                     }
 
                 } else {
-                    // If sign in fails, display a message to the user.
-                    Log.w("Sing Up", "createUserWithEmail:failure", task.exception)
                     Snackbar.make(
                         binding.root as ViewGroup,
                         "Authentication failed.",
@@ -113,7 +107,7 @@ class SingUpActivity : AppCompatActivity() {
         // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = auth.currentUser
         if(currentUser != null){
-            reload();
+            reload()
         }
     }
 

@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "244124690089-uum23ucrjogsidtfthedv3m6ses4a4e6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.latihan.myapplication",
+            "certificate_hash": "19f4c84fc9d71efcc78e756e218cabfd61bd92bf"
+          }
+        },
+        {
           "client_id": "244124690089-dnaoloptn8c1l6jdkvlotaa30dk8p983.apps.googleusercontent.com",
           "client_type": 3
         }
