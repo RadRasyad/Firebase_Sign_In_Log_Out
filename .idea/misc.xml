@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Aplikasiku/FirebaseAuth/app/src/main/res/drawable/bg_card.xml" value="0.295" />
+        <entry key="..\:/Aplikasiku/FirebaseAuth/app/src/main/res/drawable/bg_google_login.xml" value="0.295" />
         <entry key="..\:/Aplikasiku/FirebaseAuth/app/src/main/res/layout/activity_login.xml" value="0.28894927536231885" />
         <entry key="..\:/Aplikasiku/FirebaseAuth/app/src/main/res/layout/activity_main.xml" value="0.28894927536231885" />
         <entry key="..\:/Aplikasiku/FirebaseAuth/app/src/main/res/layout/activity_register.xml" value="0.28894927536231885" />

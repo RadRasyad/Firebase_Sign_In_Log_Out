@@ -2,10 +2,11 @@
     <string name="app_name">Firebase Sign In Log Out</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="login">LOGIN</string>
     <string name="sing_up">Sing Up</string>
-    <string name="register">Register</string>
+    <string name="sing_in">Sing In</string>
     <string name="username">Username</string>
 
     <string name="client_id">244124690089-dnaoloptn8c1l6jdkvlotaa30dk8p983.apps.googleusercontent.com</string>
+    <string name="or_sing_in_with">Or Sing In With</string>
+    <string name="login_with_google">Login With Google</string>
 </resources>

@@ -24,7 +24,7 @@ class SingUpActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         binding.apply {
-            btnRegister.setOnClickListener {
+            btnSingUp.setOnClickListener {
                 validation()
             }
 
