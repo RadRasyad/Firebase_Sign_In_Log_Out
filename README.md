@@ -1,6 +1,17 @@
 # Firebase_Sign_In_Log_Out
 
-Firebase Auth App
+Simple Sample Firebase Auth App
+
+## Preview
+<img src="https://github.com/RadRasyad/Firebase_Sign_In_Log_Out/blob/master/ss/sample.gif" width="300"> 
+
+
+&emsp; &emsp;&emsp;&emsp;&emsp;&emsp; **Sing In** 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; **Sing Up**  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  **Main Activity**
+
+<img src="https://github.com/RadRasyad/Firebase_Sign_In_Log_Out/blob/master/ss/Sing%20In.png" width="300"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/RadRasyad/Firebase_Sign_In_Log_Out/blob/master/ss/SingUp.png" width="300"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/RadRasyad/Firebase_Sign_In_Log_Out/blob/master/ss/MainActivity.png" width="300">
 
 ### Reference
 
