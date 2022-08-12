@@ -2,6 +2,9 @@
 
 Simple Sample Firebase Auth App
 
+#Setup
+Do not forget to set the client id in string.xml with your google firebase auth client id
+
 ## Preview
 <img src="https://github.com/RadRasyad/Firebase_Sign_In_Log_Out/blob/master/ss/sample.gif" width="240"> 
 
