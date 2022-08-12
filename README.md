@@ -4,9 +4,10 @@ Simple Sample Firebase Auth App
 
 #Setup
 
-Do not forget to 
-1.set the client id in string.xml with your google firebase auth client id
-2.use your own google-services.json that u get from Firebase
+Do not forget to
+
+1. set the client id in string.xml with your google firebase auth client id
+2. use your own google-services.json that u get from Firebase
 
 ## Preview
 <img src="https://github.com/RadRasyad/Firebase_Sign_In_Log_Out/blob/master/ss/sample.gif" width="240"> 
