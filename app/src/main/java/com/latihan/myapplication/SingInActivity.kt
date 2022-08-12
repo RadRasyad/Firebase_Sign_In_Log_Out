@@ -1,10 +1,13 @@
 package com.latihan.myapplication
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.result.contract.ActivityResultContracts
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -99,14 +102,15 @@ class SingInActivity : AppCompatActivity() {
         startActivity(Intent(this, MainActivity::class.java))
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
+    private var resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+        if (result.resultCode == Activity.RESULT_OK) {
 
-        if (requestCode == 1001) {
+            val data: Intent? = result.data
+
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
             try {
                 val account = task.getResult(ApiException::class.java)!!
-
+                Log.d("data Intent", account.idToken!!)
                 firebaseAuthWithGoogle(account.idToken!!)
             } catch (e: ApiException) {
                 Snackbar.make(
@@ -139,7 +143,7 @@ class SingInActivity : AppCompatActivity() {
     private fun signIn() {
         progressBar(true)
         val signInIntent = googleSignInClient.signInIntent
-        startActivityForResult(signInIntent, 1001)
+        resultLauncher.launch(signInIntent)
         progressBar(false)
     }
 
