@@ -2,7 +2,10 @@
 
 Simple Sample Firebase Auth App
 
-#Setup
+### Another Version
+- [Flutter(Android)](https://github.com/RadRasyad/firebase_auth_flutter)
+
+# Setup
 
 Do not forget to
 
